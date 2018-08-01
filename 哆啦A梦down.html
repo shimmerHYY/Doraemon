@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>叮当猫down</title>
+    <style>
+        body{
+            position: relative;
+            width:500px;
+            height: 500px;
+            margin: 0 auto;
+            background-color: darkkhaki;
+        }
+        .head{
+            z-index: 3;
+            position:absolute;
+            width: 400px;
+            height: 400px;
+            background-color: #0b9fcd;
+            border: solid 2px black;
+            border-radius:200px;
+            margin: 0 auto;
+            margin-top: 100px;
+            -webkit-transform:rotate(345deg);
+            -moz-transform:rotate(345deg);
+            -ms-transform:rotate(345deg);
+        }
+        .white{
+            width: 380px;
+            height: 305px;
+            background-color: #ffffff;
+            border:solid 2px #000000;
+            border-radius: 200px;
+            float: left;
+            margin-left: 8px;
+            margin-top: -20px;
+        }
+        .eyes{
+            position:relative;
+            z-index: 2;
+        }
+        .left{
+            float:left;
+            width: 70px;
+            height: 70px;
+            background-color: #ffffff;
+            border: solid 2px black;
+            border-radius:35px;
+            margin: 0 auto;
+            margin-top: 40px;
+            margin-left: 124px;
+            -webkit-transform:scaleY(1.4);
+            -moz-transform:scaleY(1.4);
+            -ms-transform:scaleY(1.4);
+        }
+        .right{
+            float: right;
+            width: 70px;
+            height: 70px;
+            background-color: #ffffff;
+            border: solid 2px black;
+            border-radius:35px;
+            margin: 0 auto;
+            margin-top:40px;
+            margin-right: 128px;
+            -webkit-transform:scaleY(1.4);
+            -moz-transform:scaleY(1.4);
+            -ms-transform:scaleY(1.4);
+        }
+        .zyb{
+            width: 15px;
+            height: 15px;
+            background-color:#000000;
+            border-radius: 7px;
+            -webkit-transform:scaleY(1.4);
+            -moz-transform:scaleY(1.4);
+            -ms-transform:scaleY(1.4);
+            margin: 0 auto;
+            margin-top: 30px;
+            margin-right: 5px;
+        }
+        .yyb{
+            width: 15px;
+            height: 15px;
+            background-color:#000000;
+            border-radius: 7px;
+            -webkit-transform:scaleY(1.4);
+            -moz-transform:scaleY(1.4);
+            -ms-transform:scaleY(1.4);
+            margin: 0 auto;
+            margin-top: 30px;
+            margin-left: 5px;
+        }
+        .zyw{
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            background-color:#fff;
+            border-radius: 3px;
+            margin-left: 7px;
+            top: 5px;
+        }
+        .yyw{
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            background-color:#fff;
+            border-radius: 3px;
+            right: 7px;
+            top: 5px;
+        }
+        .nose{
+            position: relative;
+            width: 40px;
+            height: 40px;
+            background-color:#E0212B;
+            border: solid 2px #000000;
+            border-radius: 20px;
+            margin: 0 auto;
+            margin-top:110px;
+            margin-right: 167px;
+            z-index: 2;
+        }
+        .light{
+            width: 10px;
+            height: 10px;
+            border-radius: 5px;
+            box-shadow: 10px 5px 5px white;
+            margin-left: 0px;
+            margin-top: 5px;
+       }
+        .line{
+            width: 2px;
+            height: 145px;
+            background-color: black;
+            margin: 0 auto;
+            position: relative;
+            margin-left: 210px;
+        }
+        .flow{
+            margin: 0 auto;
+            position: relative;
+            width: 500px;
+            height: 260px;
+            float: left;
+            margin-top:-193px ;
+            margin-left: -50px;
+            overflow: hidden;
+        }
+        .mouth{
+            position: relative;
+            width: 300px;
+            height: 260px;
+            border:solid 2px #000000;
+            border-radius: 200px;
+            margin: 0 auto;
+            margin-top: -188px;
+            -webkit-transform:scale(1.1);
+            -moz-transform:scaleY(1.1);
+            -ms-transform:scaleY(1.1);
+        }
+        .bearA{
+            position: relative;
+        }
+        .a{
+            width: 120px;
+            height:2px;
+            background-color: black;
+            margin: 0 auto;
+            margin-left: 55px;
+            margin-top: -120px;
+            -webkit-transform:rotate(200deg);
+            -moz-transform:rotate(200deg);
+            -ms-transform:rotate(200deg);
+        }
+        .b{
+            width: 130px;
+            height: 2px;
+            background-color: #000000;
+            margin: 0 auto;
+            margin-left: 30px;
+            margin-top: 40px;
+            -webkit-transform:rotate(187deg);
+            -moz-transform:rotate(187deg);
+            -ms-transform:rotate(187deg);
+        }
+        .c{
+            width: 140px;
+            height: 2px;
+            background-color: #000000;
+            margin: 0 auto;
+            margin-left: 20px;
+            margin-top:40px;
+            -webkit-transform:rotate(175deg);
+            -moz-transform:rotate(175deg);
+            -ms-transform:rotate(175deg);
+        }
+        .bearB{
+            position: relative;
+        }
+        .d{
+            width: 120px;
+            height:2px;
+            background-color: black;
+            margin: 0 auto;
+            margin-right: 20px;
+            margin-top: -60px;
+            -webkit-transform:rotate(177deg);
+            -moz-transform:rotate(177deg);
+            -ms-transform:rotate(177deg);
+        }
+        .e{
+            width: 130px;
+            height: 2px;
+            background-color: #000000;
+            margin: 0 auto;
+            margin-right: 5px;
+            margin-top: 45px;
+            -webkit-transform:rotate(185deg);
+            -moz-transform:rotate(185deg);
+            -ms-transform:rotate(185deg);
+        }
+        .f{
+            width: 140px;
+            height: 2px;
+            background-color: #000000;
+            margin: 0 auto;
+            margin-right: 5px;
+            margin-top:50px;
+            -webkit-transform:rotate(20deg);
+            -moz-transform:rotate(20deg);
+            -ms-transform:rotate(20deg);
+        }
+        .neck{
+            z-index: 2;
+            left: 20px;
+            width: 300px;
+            height: 300px;
+            margin:auto;
+            position: absolute;
+        }
+        .neck-z{
+            width: 350px;
+            height: 350px;
+            border: solid 2px #000000;
+            border-radius: 175px;
+            background-color: red;
+            margin-left: -16px;
+            margin-top: 155px;
+        }
+        .neck-y{
+            width: 350px;
+            height: 350px;
+            border: solid 2px #000000;
+            border-radius: 175px;
+            background-color: red;
+            margin-left:10px;
+            margin-top: -339px;
+        }
+        .ding{
+            width: 50px;
+            height: 50px;
+            background-color:#FFE43D;
+            border: solid 2px #000000;
+            border-radius: 35px;
+            margin: 0 auto;
+            margin-left:155px;
+            margin-top: -25px;
+        }
+        .fline{
+            width: 40px;
+            height: 40px;
+            border-bottom: solid 1.5px #000000;
+            border-radius: 25px;
+            margin: 0 auto;
+            margin-top: -20px;
+            margin-left: 0px;
+            -webkit-transform:rotate(345deg);
+            -moz-transform:rotate(345deg);
+            -ms-transform:rotate(345deg);
+        }
+        .sline{
+            width: 50px;
+            height: 40px;
+            border-bottom: solid 1.5px #000000;
+            border-radius: 25px;
+            margin: 0 auto;
+            margin-top: -35px;
+            margin-left: -5px;
+            -webkit-transform:rotate(345deg);
+            -moz-transform:rotate(345deg);
+            -ms-transform:rotate(345deg);
+        }
+        .circle{
+            width: 7px;
+            height: 7px;
+            background-color: #7D6A5B;
+            border:solid 1px #000000;
+            border-radius: 4px;
+            -webkit-transform:scaleX(1.5);
+            -moz-transform:scaleX(1.5);
+            -ms-transform:scaleX(1.5);
+            margin: 0 auto;
+            margin-top: 3px;
+            margin-left: 23px;
+        }
+        .short{
+            width: 10px;
+            height: 10px;
+            border-right: solid 2px #000000;
+            border-radius: 5px;
+            margin: 0 auto;
+            margin-left: 20px;
+        }
+        .bodys{
+            position:absolute;
+            position:absolute;
+            margin: 0 auto;
+        }
+        .left-hands{
+            position:absolute;
+            width: 200px;
+            height: 100px;
+            background-color: #0b9fcd;
+            border: solid 2px #000000;
+            border-radius: 150px;
+            margin: 0 auto;
+            -webkit-transform:rotate(20deg);
+            -moz-transform:rotate(20deg);
+            -ms-transform:rotate(20deg);
+            margin-left: -23px;
+            top: 465px;
+            border-left-style: none;
+            border-top-style: none;
+        }
+        .zq{
+            position:absolute;
+            width: 80px;
+            height: 80px;
+            background-color: #ffffff;
+            border: solid 2px #000000;
+            border-radius: 60px;
+            -webkit-transform:scaleX(1.2);
+            -moz-transform:scaleX(1.2);
+            -ms-transform:scaleX(1.2);
+            margin: 0 auto;
+            margin-left: 95px;
+            top: 450px;
+            z-index: 3;
+        }
+        .right-hands{
+            position:absolute;
+            width: 120px;
+            height: 120px;
+            background-color:#0b9fcd;
+            border: solid 2px #000000;
+            border-radius: 80px;
+            margin: 0 auto;
+            -webkit-transform:scaleX(1.5);
+            -moz-transform:scaleX(1.5);
+            -ms-transform:scaleX(1.5);
+            left: 240px;
+            top: 455px;
+
+            border-top-style: none;
+        }
+        .yq{
+            width: 68px;
+            height: 80px;
+            background-color: #ffffff;
+            border: solid 2px #000000 ;
+            border-radius: 60px;
+            margin-left: 55px;
+            margin-top: -30px;
+            -webkit-transform:rotate(20deg);
+            -moz-transform:rotate(20deg);
+            -ms-transform:rotate(20deg);
+        }
+
+        .foot{
+
+            margin:auto;
+            width: 90px;
+            height: 80px;
+            background-color:#ffffff;
+            border: solid 2px #000000;
+            border-radius: 50px;
+            margin-left: -200px;
+            margin-top: 492px;
+            -webkit-transform:rotate(340deg);
+            -moz-transform:rotate(340deg);
+            -ms-transform:rotate(340deg);
+        }
+        .bleft{
+            clear: both;
+            width: 100px;
+            height: 125px;
+            background-color: #0b9fcd;
+            border: solid 2px #000000;
+            border-radius: 60px;
+            margin: 0 auto;
+            margin-left: -132px;
+            margin-top:-117px ;
+        }
+        .top{
+            z-index: ;
+            width: 240px;
+            height: 240px;
+            background-color:#0b9fcd;
+            border: solid 2px #000000;
+            border-radius: 120px;
+            margin: 0 auto;
+            margin-top: -250px;
+            margin-left: -115px;
+        }
+        .center{
+            width: 160px;
+            height: 100px;
+            background-color:#0b9fcd;
+            border-bottom: solid 2px #000000;
+            border-radius: 150px;
+            margin: 0 auto;
+            margin-left: -145px;
+            margin-top: -95px;
+        }
+        .center-qc{
+            width: 74px;
+            height: 106px;
+            background-color: #0b9fcd;
+            margin: 0 auto;
+            margin-left: -5px;
+            margin-top: 23px;
+            -webkit-transform:rotate(20deg);
+            -moz-transform:rotate(20deg);
+            -ms-transform:rotate(20deg);
+        }
+        .fugai{
+            width:150px;
+            height: 120px;
+            border-left: solid 2px #000000;
+            background-color:#0b9fcd;
+            border-radius: 80px;
+            margin-left: 45px;
+            margin-top: -3px;
+        }
+        .zqline{
+            width: 2px;
+            height: 15px;
+            background-color: #000000;
+            margin: 0 auto;
+            margin-left: -2px;
+            margin-top: 53px;
+            -webkit-transform:rotate(200deg);
+            -moz-transform:rotate(200deg);
+            -ms-transform:rotate(200deg);
+
+        }
+        .yqline{
+            width: 2px;
+            height: 15px;
+            background-color: #000000;
+            margin: 0 auto;
+            margin-left: 16px;
+            margin-top: 77px;
+            -webkit-transform:rotate(175deg);
+            -moz-transform:rotate(175deg);
+            -ms-transform:rotate(175deg);
+        }
+        .tail{
+            width: 45px;
+            height: 45px;
+            background-color:#E0212B;
+            border: solid 2px #000000;
+            border-radius: 30px;
+            margin: 0 auto;
+            margin-left: -122px;
+            margin-top: -276px;
+        }
+        .tail-line{
+            width:30px;
+            height: 30px;
+            border-right:solid 3px #000000 ;
+            border-radius: 15px;
+            margin: 0 auto;
+            -webkit-transform:rotate(320deg);
+            -moz-transform:rotate(320deg);
+            -ms-transform:rotate(320deg);
+            margin-left: 18px;
+            margin-top: 31px;
+        }
+    </style>
+</head>
+<body>
+<div class="head"><!--头部-->
+        <div class="eyes"><!--眼睛-->
+            <div class="left"><!--左眼-->
+                <div class="zyb"><!--左眼球-->
+                    <div class="zyw"></div><!--左眼白-->
+                </div>
+             </div>
+            <div class="right"><!--右眼-->
+                <div class="yyb"><!--右眼球-->
+                    <div class="yyw"></div><!--右眼白-->
+                </div>
+            </div>
+        </div>
+        <div class="face"><!--脸部-->
+            <div class="white"></div><!--脸白-->
+            <div class="nose"><!--鼻子-->
+                <div class="light"></div><!--鼻子高光-->
+            </div>
+            <div class="line"></div><!--鼻子下面的线-->
+            <div class="flow"><!--超过嘴巴之外边框覆盖-->
+               <div class="mouth"></div><!--嘴巴-->
+            </div>
+            <div class="bearA"><!--左边胡子-->
+                <div class="a"></div>
+                <div class="b"></div>
+                <div class="c"></div>
+            </div>
+            <div class="bearB"><!--右边胡子-->
+                <div class="d"></div>
+                <div class="e"></div>
+                <div class="f"></div>
+            </div>
+        </div>
+</div>
+<div class="neck"><!--颈部-->
+    <div class="neck-z"></div><!--颈部左边-->
+    <div class="neck-y"></div><!--颈部右边-->
+    <div class="ding"><!--铃铛-->
+         <div class="fline"></div><!--铃铛上的第一根横线-->
+         <div class="sline"></div><!--铃铛上的第二根横线-->
+        <div class="circle"></div><!--圆圈孔-->
+        <div class="short"></div><!--孔下的细线-->
+    </div>
+</div>
+<div class="bodys"><!--身体-->
+    <div class="left-hands"><!--左手臂-->
+        <div class="center-qc"></div><!--去除身体中部多余的交接线-->
+    </div>
+    <div class="right-hands"><!--右手臂-->
+        <div class="yq"><!--右手拳头-->
+            <div class="yqline"></div><!--右手拳头下的线-->
+        </div>
+    </div>
+    <div class="foot"><!--脚-->
+        <div class="fugai"></div><!--覆盖脚在身体上的显示部分-->
+    </div>
+    <div class="bleft"></div><!--左侧身体-->
+    <div class="top"></div><!--上部分身体-->
+    <div class="center"></div><!--中部身体-->
+    <div class="tail"><!--尾巴-->
+        <div class="tail-line"></div><!--尾巴上的线-->
+    </div>
+</div>
+<div class="zq"><!--左手拳头-->
+    <div class="zqline"></div><!--左手拳头下的线-->
+</div>
+</body>
+</html>
